@@ -1,0 +1,96 @@
+/* Basscss Custom Buttons */
+/*
+ * Experimental, highly customizable button styles */
+
+/* Button Base */
+.button {
+  font-size: var(--button-font-size);
+  font-weight: var(--button-font-weight);
+  text-align: center;
+  text-decoration: none;
+  line-height: var(--button-line-height);
+  cursor: pointer;
+  display: inline-block;
+  box-sizing: border-box;
+  margin: 0;
+  height: auto;
+  border-width: var(--button-border-width);
+  border-style: solid;
+  border-color: transparent;
+  -webkit-appearance: none;
+}
+
+::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+.button:hover {
+  text-decoration: none;
+}
+
+/* Button Size Extensions */
+.button-small {
+  font-size: var(--button-small-font-size);
+  line-height: var(--button-small-line-height);
+  padding: var(--button-small-padding-y) var(--button-small-padding-x);
+}
+
+.button-big {
+  font-size: var(--button-big-font-size);
+  line-height: var(--button-big-line-height);
+  padding: var(--button-big-padding-y) var(--button-big-padding-x);
+}
+
+/* Button Color */
+.button-primary {
+  color: var(--button-primary-color);
+  background-color: var(--button-primary-background-color);
+  background-image: var(--button-primary-background-image, none);
+  box-shadow: var(--button-primary-box-shadow, none);
+  border-radius: var(--button-primary-border-radius);
+}
+
+.button-primary:hover {
+  color: var(--button-primary-hover-color);
+  background-color: var(--button-primary-hover-background-color);
+  background-image: var(--button-primary-hover-background-image);
+  box-shadow: var(--button-primary-hover-box-shadow);
+}
+
+.button-primary:focus {
+}
+
+.button-primary:active {
+}
+
+
+/* Variables */
+:root {
+
+  --button-font-weight: bold;
+  --button-font-size: 1rem;
+  --button-line-height: 1.125;
+  --button-padding-x: var(--space-2, 1rem);
+  --button-padding-y: var(--space-1, .5rem);
+  --button-border-radius: var(--border-radius, 3px);
+
+  --button-small-font-size: .875rem;
+  --button-small-line-height: 1;
+  --button-small-padding-x: var(--space-1, .5rem);
+  --button-small-padding-y: var(--space-1, .5rem);
+
+  --button-big-font-size: 1.125rem;
+  --button-big-line-height: 1;
+  --button-big-padding-x: var(--space-3, 2rem);
+  --button-big-padding-y: var(--space-2, 1rem);
+
+  --button-primary-color: white;
+  --button-primary-background-color: blue;
+  --button-primary-border-radius: var(--button-border-radius);
+
+  --button-primary-hover-color: var(--button-primary-color);
+  --button-primary-hover-background-color: white;
+
+}
+
